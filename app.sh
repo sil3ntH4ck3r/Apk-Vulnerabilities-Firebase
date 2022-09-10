@@ -147,7 +147,7 @@ function escaneoBasico(){
 
   cat comprobandoBases.txt | grep -B1 "200" | head -n 1 > basesFinales
 
-  numeroBasesDatos=$(cat comprobandoBases.txt | wc -l)
+  numeroBasesDatos=$(cat basesFinales | wc -l)
 
   echo -e "\n${yellowColour}[${endColour}${greenColour}+${endColour}${yellowColour}]${endColour} ${greenColour}SUCCESS${endColour} ${grayColour}Han sido encontradas $numeroBasesDatos bases de datos vulnerables${endColour}"
   echo -e "\n${yellowColour}[${endColour}${blueColour}+${endColour}${yellowColour}]${endColour} ${blueColour}INFO${endColour} ${grayColour}Enlaces de las bases de datos, gurdadas en: basesFinales.txt ${endColour}"
@@ -234,7 +234,7 @@ function escanoBasicoEspecifico()
 
   cat comprobandoBases.txt | grep -B1 "200" | head -n 1 > basesFinales
 
-  numeroBasesDatos=$(cat comprobandoBases.txt | wc -l)
+  numeroBasesDatos=$(cat basesFinales | wc -l)
 
   echo -e "\n${yellowColour}[${endColour}${greenColour}+${endColour}${yellowColour}]${endColour} ${greenColour}SUCCESS${endColour} ${grayColour}Han sido encontradas $numeroBasesDatos bases de datos vulnerables${endColour}"
   echo -e "\n${yellowColour}[${endColour}${blueColour}+${endColour}${yellowColour}]${endColour} ${blueColour}INFO${endColour} ${grayColour}Enlaces de las bases de datos, gurdadas en: basesFinales.txt ${endColour}"
