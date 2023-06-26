@@ -1,5 +1,5 @@
 # Apk-Vulnerabilities-Firebase (BETA)
-Script, que te escanea la sección o categoría que quieras de aplicaciones Android, que ofrece la plataforma apkcombo.com.
+Script, que te escanea la sección o categoría que quieras de aplicaciones Android, que ofrece la plataforma `en.uptodown.com`.
 ## Introducción
 ### ¿Qué es Firebase?
 Firebase, es un servicio de Google, que te otorga la comodidad de crear aplicaciones móviles. Como la plataforma está subida en la nube, cualquier dispositivo puede utilizar sus servicios. En la mayoría de casos donde se emplea este servicio, es para utilizarlo como base de datos.
@@ -13,7 +13,7 @@ Firebase, es un servicio de Google, que te otorga la comodidad de crear aplicaci
 - Si no vemos que nos ponga permiso denegado, ya tendríamos acceso a la base de datos.
 ## Script
 ### ¿Cómo funciona el script?
-Este script, lo que hace es te analiza las APK de la web: `apkcombo.com`. Esta web te ofrece descargar juegos o aplicaciones, y dentro de una de esas dos secciones, puedes seleccionar la categoria que tu quieres.
+Este script, lo que hace es te analiza las APK de la web: `https://en.uptodown.com/`. Esta web te ofrece descargar juegos o aplicaciones, y dentro de una de esas dos secciones, puedes seleccionar la categoria que tu quieres.
 Este script te automatiza toda la metodologia de ataque, en varias APK, para que puedas encontrar las máximas bases expuestas posibles.
 ### ¿Cómo utilizarlo?
 En este script, tienes varias opciones:
@@ -22,7 +22,7 @@ En este script, tienes varias opciones:
 
 | Opciones           | Que hace                                                |  Como utilizarla  |
 |:-------------------|:--------------------------------------------------------|:------------------|
-| -s                 | Escaneo de unas pocas aplicaciones de la seccion dada   | -s {game o app}
+| -s                 | Escaneo de unas pocas aplicaciones de la sección dada   | -s {sección}
 | -c                 | Escaneo de unas pocas aplicaciones de la categoria dada | -c {categoria}
 | -h                 | Te muestra el panel de ayuda                            |
 
@@ -32,7 +32,7 @@ Todas la opciones anteriores más:
 
 | Opciones           | Que hace                                                |  Como utilizarla                 |
 |:-------------------|:--------------------------------------------------------|:---------------------------------|
-| -a                 | Escaneo avanzado, donde analizas todas las APK          | -a -s {game o app} 
+| -a                 | Poder poner un apk propio, para que te lo escanee       | -a {aplicativo.apk} 
 |                    |                                                         | -a -c {categoria}
 | -r                 | Para que te instale los requerimientos automaticamente  | -r
 
@@ -40,51 +40,65 @@ Todas la opciones anteriores más:
 ```
 [+] Uso: ./app.sh -s app
 
-[+] IMPORTANTE  Es una version Beta, aun esta en desarollo y pueden haber errores, para minimizarlos, rogamos que evite la desconexion de internet 
-                durante la ejecucion del programa
+[+] IMPORTANTE 	Es una versión Beta, aún está en desarrollo y puede haber errores, para minimizarlos, rogamos que evite la desconexión de internet 
+	       durante la ejecución del programa
 
-        Version Beta
+	Versión Beta
 
-                Parametro: -s   Seleccionar la seccion que desea escanear: game o app
+		Parámetro: -s 	Seleccionar la sección que desea escanear: game o app
 
-                Parametro: -c   Seleccionar categoria de los juegos o las aplicaciones que desea escanear
+		Parámetro: -c 	Seleccionar categoría de la sección que desea escanear
 
-                        Categorias para aplicaciones:
+			Sección communication:
 
-                                tools                   travel-and-local
-                                entertainment           food-and-drink
-                                communication           maps-and-navigation
-                                social                  beauty
-                                music-and-audio         comics
-                                photography             dating
-                                video-players           events
-                                personalization         finance
-                                productivity            news-and-magazines
-                                sports                  weather
-                                education               house-and-home
-                                lifestyle               libraries-and-demo
-                                books-and-reference     medical
-                                shopping                parenting
-                                business                art-and-design
-                                health-and-fitness      auto-and-vehicles
+				messaging		social
+				communication-utilities		
 
-                        Categorias para juegos:
+			Sección games:
 
-                                game-adventure          game-racing
-                                game-action             game-puzzle
-                                game-role-playing       game-card
-                                game-arcade             game-casino
-                                game-casual             game-music
-                                game-strategy           game-board
-                                game-sports             game-educational
-                                game-simulation         game-trivia
-                                game-word
+				action-adventure	arcade
+				card-games		casual
+				emulator		guides
+				kids			other-games
+				platformer		puzzle
+				racing-sims		rpg
+				sports			strategy
 
-                Parametro (opcional): -h        Mostrar este mismo panel de ayuda
+			Sección lifestyle:
 
-        Version Definitiva (Aun se esta desarollando)
+				design-and-fashion	fitness
+				food-and-drink		funny
+				gambling		general-lifestyle
+				health			IOT
+				news-magazines		religion
+				shopping		travel
 
-                Parametro: -r   Instalar requerimientos necesarios automaticamente
+			Sección multimedia:
 
-                Parametro: -a   Escaneo avanzado (analiza todos los apk)
+				other-tools		other-tools
+				photography		tv-radio
+				video			video-audio-downloaders
+
+			Sección productivity:
+
+				books-comics-readers	education-languages
+				finance			personal
+				schedules-calendars	writing-notes
+
+			Sección tools:
+
+				browsing		download-managers
+				file-management		general-android
+				keyboards		launchers
+				networks		personalization
+				root			security-performance
+				weather
+
+		Parámetro (opcional): -h 	Mostrar este mismo panel de ayuda
+
+	Versión Definitiva (Aún se esta desarollando)
+
+		Parámetro: -r 	Instalar requerimientos necesarios automaticamente
+
+		Parámetro: -a 	Escaneo avanzado (analiza todos los apk)
 ```
